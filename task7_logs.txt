@@ -1,7 +1,18 @@
-# Task 7: Check logs of a container
+# Task 7: Docker Logs
+
+# Run container
+docker run -d --name log_container nginx
 
 # View logs
-docker logs <container_id>
+docker logs log_container
 
 # Follow logs in real-time
-docker logs -f <container_id>
+docker logs -f log_container
+
+
+
+This task demonstrates how to view and monitor logs of a running container.
+Logs help in debugging and understanding container behavior.
+
+Example Output:
+nginx started successfully...
