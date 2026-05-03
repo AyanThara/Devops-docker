@@ -1,7 +1,27 @@
-# Task 5: Enter running container
+# Task 5: Execute Commands Inside Container
 
-# List running containers
-docker ps
+# Run container
+docker run -dit --name exec_container ubuntu
 
-# Enter container
-docker exec -it <container_id> bash
+# Execute bash inside container
+docker exec -it exec_container bash
+
+# Inside container: create a file
+echo "Hello from inside container" > test.txt
+
+# View file content
+cat test.txt
+
+# Exit container
+exit
+
+# Verify file exists using exec
+docker exec -it exec_container cat test.txt
+
+
+This task demonstrates how to interact with a running container using docker exec,
+allowing execution of commands and file operations inside the container.
+
+
+Example Output:
+Hello from inside container
