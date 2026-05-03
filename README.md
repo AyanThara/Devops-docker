@@ -1,22 +1,23 @@
-# DevOps Docker Commands
+# DevOps Docker Lab (INT332)
 
-This repository contains all Docker commands practiced during DevOps classes.
+This repository contains all Docker tasks performed during DevOps lab sessions.
 
-##Topics Covered
+## Tasks Implemented
 
-* Docker Installation & Info
-* Container Execution (docker run)
-* Port Mapping
-* Environment Variables
-* Volumes
-* Networking
-* Container Management
-* Dockerfile
+- Task 1: Basic Docker Commands  
+- Task 2: Container Naming  
+- Task 3: Environment Variables  
+- Task 4: Volumes (Data Persistence)  
+- Task 5: Container Interaction (docker exec)  
+- Task 6: Apache Web Server Deployment  
+- Task 7: Logs Monitoring  
+- Task 8: Stop and Remove Containers  
+- Task 9: Container ↔ Host File Copy  
+- Task 10: Docker Networking  
+- Task 11: MySQL Container Setup  
 
-##Commands File
+## Objective
+To understand Docker concepts through practical implementation including containers, volumes, networking, and deployment.
 
-All commands are listed in docker_commands.txt
-
-##Objective
-
-To understand Docker and containerization through hands-on command practice.
+## Conclusion
+All tasks were successfully implemented and verified using Docker commands.
