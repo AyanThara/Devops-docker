@@ -1,4 +1,10 @@
-# Task 2: Run nginx container with custom name
+# Task 2: Container Naming
 
-docker run -d --name myapp nginx
+# Run container without name
+docker run -d nginx
+
+# Run container with name
+docker run -d --name mycontainer nginx
+
+# Verify running containers
 docker ps
