@@ -8,3 +8,13 @@ docker run -d --name mycontainer nginx
 
 # Verify running containers
 docker ps
+
+
+
+This task demonstrates how to assign a custom name to a Docker container
+using the --name option for easier management.
+
+
+Example Output:
+CONTAINER ID   IMAGE   NAME
+xxxxxx         nginx   mycontainer
