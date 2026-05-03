@@ -1,6 +1,10 @@
-# Task 3: Run Ubuntu container with environment variable
+# Task 3: Environment Variables
 
+# Run container with environment variable
+docker run -e MY_NAME=Ayan ubuntu env
+
+# Run container interactively with env variable
 docker run -it -e COLLEGE=CSE ubuntu bash
 
-# Check variable inside container
+# Inside container, check variable
 echo $COLLEGE
