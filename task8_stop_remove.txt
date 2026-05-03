@@ -1,7 +1,20 @@
-# Task 8: Stop and remove a container
+# Task 8: Stop and Remove Containers
+
+# Run container
+docker run -d --name test_container nginx
 
 # Stop container
-docker stop <container_id>
+docker stop test_container
 
 # Remove container
-docker rm <container_id>
+docker rm test_container
+
+# Verify removal
+docker ps -a
+
+
+This task demonstrates how to stop a running container and remove it from the system.
+It is part of container lifecycle management.
+
+Example Output:
+Container removed successfully.
