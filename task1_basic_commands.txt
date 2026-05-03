@@ -19,3 +19,6 @@ docker ps
 
 # List all containers
 docker ps -a
+
+
+This file contains all Docker commands practiced during DevOps lab sessions.
