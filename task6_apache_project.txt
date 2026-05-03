@@ -1,13 +1,25 @@
-# Task 6: Run Apache container and modify webpage
+# Task 6: Apache Web Server Deployment
 
-# Pull image
+# Pull Apache image
 docker pull httpd
 
 # Run container with port mapping
-docker run -d -p 8080:80 --name my-apache httpd
+docker run -d --name my-apache -p 8080:80 httpd
 
-# Enter container
-docker exec -it my-apache bash
+# Modify HTML inside container
+docker exec -it my-apache bash -c "echo '<h1>Hello from Docker Apache!</h1>' > /usr/local/apache2/htdocs/index.html"
 
-# Modify webpage
-echo "<h1>Hello from Docker Apache!</h1>" > /usr/local/apache2/htdocs/index.html
+# Verify output using curl
+curl http://localhost:8080
+
+# Check logs
+docker logs my-apache
+
+
+
+This task demonstrates deploying a web server using Docker.
+An Apache container is run, and a custom HTML page is created and accessed via browser.
+
+
+Output:
+Hello from Docker Apache!
