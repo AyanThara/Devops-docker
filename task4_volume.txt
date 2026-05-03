@@ -1,4 +1,4 @@
-# Task 4: Create and use Docker volume
+# Task 4: Docker Volumes (Data Persistence)
 
 # Create volume
 docker volume create mydata
@@ -7,7 +7,20 @@ docker volume create mydata
 docker volume ls
 
 # Run container with volume
-docker run -dit --name voltest -v mydata:/data ubuntu
+docker run -dit --name container1 -v mydata:/app/data ubuntu
 
-# Check inside container
-docker exec -it voltest ls /data
+# Create file inside container
+docker exec -it container1 sh -c "echo 'This is my first volume' > /app/data/report.txt"
+
+# Verify file
+docker exec -it container1 cat /app/data/report.txt
+
+# Stop and remove container
+docker stop container1
+docker rm container1
+
+# Run new container with same volume
+docker run -dit --name container2 -v mydata:/app/data ubuntu
+
+# Verify data persists
+docker exec -it container2 cat /app/data/report.txt
