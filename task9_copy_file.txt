@@ -1,7 +1,24 @@
-# Task 9: Copy files between host and container
+# Task 9: Copy Files Between Container and Host
 
-# Copy file from host to container
-docker cp file.txt <container_id>:/app
+# Run container
+docker run -dit --name copy_container ubuntu
+
+# Create file inside container
+docker exec -it copy_container sh -c "echo 'Hello from container' > /app.txt"
 
 # Copy file from container to host
-docker cp <container_id>:/app/file.txt .
+docker cp copy_container:/app.txt .
+
+# Copy file from host to container
+docker cp app.txt copy_container:/app_copy.txt
+
+# Verify inside container
+docker exec -it copy_container cat /app_copy.txt
+
+
+This task demonstrates how to copy files between the Docker container and the host system
+using the docker cp command.
+
+
+Example Output:
+Hello from container
