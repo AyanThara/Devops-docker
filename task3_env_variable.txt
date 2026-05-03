@@ -8,3 +8,12 @@ docker run -it -e COLLEGE=CSE ubuntu bash
 
 # Inside container, check variable
 echo $COLLEGE
+
+
+
+This task demonstrates how to pass environment variables to a Docker container
+using the -e option. These variables help configure container behavior dynamically.
+
+
+Example Output:
+COLLEGE=CSE
