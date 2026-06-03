@@ -1,0 +1,11 @@
+services:
+
+  web:
+    image: nginx
+
+  db:
+    image: postgres
+
+
+docker compose up
+docker compose down
