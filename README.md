@@ -11,7 +11,7 @@ This repository contains all Docker tasks performed during DevOps lab sessions.
 - Task 5: Container Interaction (docker exec).
 - Task 6: Apache Web Server Deployment.
 - Task 7: Logs Monitoring  
-- Task 8: Stop and Remove Containers  
+- Task 8: Stop and Remove Containers.  
 - Task 9: Container ↔ Host File Copy  
 - Task 10: Docker Networking  
 - Task 11: MySQL Container Setup  
