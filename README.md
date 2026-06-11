@@ -3,7 +3,6 @@
 This repository contains all Docker tasks performed during DevOps lab sessions.
 
 ## Tasks Implemented 
-
 - Task 1: Basic Docker Commands.
 - Task 2: Container Naming.
 - Task 3: Environment Variables.
