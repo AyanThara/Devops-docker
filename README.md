@@ -18,6 +18,5 @@ This repository contains all Docker tasks performed during DevOps lab sessions.
 - 
 ## Objective
 To understand Docker concepts through practical implementation including containers, volumes, networking, and deployment.
-
 ## Conclusion
 All tasks were successfully implemented and verified using Docker commands.
